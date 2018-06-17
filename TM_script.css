@@ -25,11 +25,15 @@ body.first_page {
 }
 
 /* Beginning HomePage styles*/
+div.position {
+	margin: 0 auto;
+	width: 1280px;
+}
 
 .hpg1,.hpg2,.hpg3,.hpg4,.hpg5{
 	box-shadow:0 2px 4px 0 #00000029,0 2px 10px 0 #0000001f;
 	border:1px solid #A4A4A4;
-	text-transform:uppercase; 
+	text-transform:uppercase;
 }
 .hpg3,.hpg4,.hpg5{
 	display: inline-table;
