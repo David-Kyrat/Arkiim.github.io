@@ -10,7 +10,7 @@ body {
 }
 div.position {
 	margin: 0 auto;
-	width: 1260px;
+	width: auto;
 }
 h1,h2 {
 	text-align: inherit;
