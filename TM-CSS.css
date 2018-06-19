@@ -8,6 +8,10 @@ body {
 	background-repeat: repeat-y;
 	background-attachment: fixed;
 }
+div.position1 {
+	margin: 0 auto;
+	width: 1260px;
+}
 div.position {
 	margin: 0 auto;
 	width: auto;
