@@ -5,7 +5,7 @@ body {
 	background-image: url(https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/background.jpg);
 	background-origin: padding-box;
 	background-size: cover; 
-	background-repeat: repeat-y;
+	background-repeat repeat-y;
 	background-attachment: fixed;
 }
 div.position1 {
@@ -13,8 +13,8 @@ div.position1 {
 	width: 1260px;
 }
 div.position {
-	margin: 0 auto;
-	width: auto;
+	margin: 0 ;
+	width: 1260px;
 }
 h1,h2 {
 	text-align: inherit;
