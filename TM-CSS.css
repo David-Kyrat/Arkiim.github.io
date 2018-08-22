@@ -165,7 +165,6 @@ li.col:hover, a.button:hover {
 	padding-top: 30px;
 	line-height: 65%;
 	height: 3.4rem;
-	display: block;
 }
 .header1,.header2 {
 	display: table;
