@@ -1,69 +1,227 @@
+/* S'il y a une margin inexpliqué de le "developer tool" c'est à cause de la webkit margin*/
 body {
 	padding: 0;
-	margin: 0;	
-	font-family: Arial;
+	margin: 0;
+	font-family: "Work Sans";
+	font-weight:300;	
+}
+body.idx{	
+	margin: 0;
+	padding: 0;
 	background-image: url(https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/background.jpg);
 	background-origin: padding-box;
 	background-size: cover; 
-	background-repeat: repeat-y;
 	background-attachment: fixed;
-
+	background-position: center center;
 }
-div.position {
+* {
+	box-sizing: border-box;
+}
+ /* Plan de histoire */
+.content ul {
+	margin-top: 0px;
+	position: relative;
+	bottom:10px;
+ /* fin */
+}
+.container1 {
+	margin: 0 auto;
+	width: 1259px;
+}
+.container {
 	margin: 0 auto;
 	width: 1260px;
 }
-h1,h2 {
-	text-align: inherit;
+
+h1,h2,h3,.nav{
+	font-family:"Segoe UI";
 }
 
+p {
+	font-size: 17px;
+	text-align: justify;
+	padding: 0 20px;
+	
+}
+.shadow,.nav,.header1,.header2,.content,.content2 {
+	box-shadow:0 2px 4px 0 #00000029,0 2px 10px 0 #0000001f;
+}
 .center, .hpg1, .hpg2 {
 	text-align: center;
 }
-.legend{ 
-	line-height: 0%;
-	font-size: 82%;
+.centerH{
+	margin: 0 auto;
 }
-.content {
-	box-shadow:0 2px 4px 0 #00000029,0 2px 10px 0 #0000001f;
-	text-align: center;
-	padding: 50px 15px;
-	margin-bottom: 368px;
+.CenterV{
+	margin: auto 0;
+}
+.right {
+	text-align: right;
+}
+.pad {
+	padding: 10px 8px;
+}
+.lmarg, .header2, .nav {
+	margin-top:1px;
 }
 
-/* Begining Headers */
-nav {
-	background-color: darkblue	;
-	box-shadow:0 4px 8px 0 #00000029,0 4px 20px 0 #0000001f;
-	display: inline-block;
+.flexC {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+} 
+.justify {
+	text-align: justify;
+}
+.UPP, .hpg1,.hpg3,.hpg4,.hpg5 {
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+.title {
+	background-image: url(https://memoire-histoire.fr/wp-content/uploads/2017/06/les-fondamentaux-histoire-3-710x400.jpg);
+	background-size: cover;
 	width: 100%;
-	height: 40px;
+	height:270px;
+	background-attachment: fixed;
 }
-a {
-	color: crimson;
-	text-decoration: none;
-	padding: 0 auto;
+.title2 {
+	margin: 50px 60px;
+	width: 40%;
+	display: inline-block;
+	border-bottom: groove 4px hsl(0, 85%, 35%);
+	border-top: groove 4px hsl(0, 85%, 35%); 
+	padding: 10px 30px;
+	font-size: 50px;
+	font-weight: 600;
+	color: hsl(0, 100%, 35%);
+}
+.content1 {
+	padding: 0px 20px;
+	position: relative;
+	width: 90% !important;
+}
+
+.content2 {
+	width: 100%;
+	position: relative;
+}	
+
+.content, .content1, .content2 {
+	background-color:white;
+	display: block;
+	width: 85%;
+	margin: 2px auto;
+	padding: 20px 35px;
+	line-height: 1.4;
+	text-align: justify;
+}
+
+hr {
+	margin: 10px 16px;
+	border: 0;
+	border-top: 2px solid #e1f1f1;	
+	}
+
+
+.content1 h2 {
+	font-weight: 300;
+	padding: 15px 0 5px 0;
+}
+
+.pic .content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	overflow: hidden;
+	width: 80%;
+	height: 100%;
+	padding: 30px 10px;
+}
+.photo,.photo1 {
+	margin: 0px 15px ;
+	display: inline-block;
+	width: 46%;
+	border: 2px solid black;
+}
+.photo1{
+	border: 2px solid teal;
+}
+.caption {
+	font-family: serif;
+	font-weight: 300;
+	font-size: 14px;
+	font-style:italic;
+	display: block;
+	width: 100%;
+	position: relative;
+	top: 15px;
+}
+
+/* Begining Navbar */
+
+.nav {
+	box-shadow:0 4px 8px 0 #00000029,0 4px 20px 0 #0000001f;
+	background-color: rebeccapurple	;
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	margin-top: 30px;
+}
+.col {
 	margin: 0 auto;
-	display: table-cell;	
+	padding: 12px 0;
+	width: 20%;
+	text-align: center;
+	z-index: 10;
+
 }
+.button {
+	display: block;
+	color: white;
+	text-decoration: none;
+	font-size: 21px;
+	font-weight: bold;
+	z-index: 10;
+
+}	
+
+li.col:hover, a.button:hover {
+	background-color: white;
+	color: rebeccapurple;
+	
+}
+
+
+/* End Navbar */
+
+/* Begining Headers */
+
 .headers {
-	padding: 20px 0 20px 0;
-	margin-bottom:35px;
-	line-height: 40%;
+	padding-top: 30px;
+	line-height: 65%;
+	height: 3.4rem;
 }
-.header1,.header2{
+.header1,.header2 {
 	display: table;
-	box-shadow:0 2px 4px 0 #00000029,0 2px 10px 0 #0000001f;
 	color: white;	
-	font-weight:lighter;
+	padding: 0 3px;
+
 }
+
 .header1{
 	text-align:left;
 	background-color: crimson;
+
 }
 .header2{
 	float: right;
-	background-color: lightblue;
+	background-color: teal;
+	font-size: 16px;
 }
 /* End Header */
 
@@ -72,7 +230,9 @@ a {
 .hpg1,.hpg2,.hpg3,.hpg4,.hpg5{
 	box-shadow:0 2px 4px 0 #00000029,0 2px 10px 0 #0000001f;
 	border:1px solid #A4A4A4;
-	text-transform:uppercase;
+	font-family: Arial;
+	background-color: white;
+	display: block;
 }
 .hpg3,.hpg4,.hpg5{
 	display: inline-table;
@@ -92,6 +252,7 @@ a {
 	margin:4.5rem 12rem 4rem 12rem;
 	padding:50px 20px;
 	font-size:1.8rem;
+	text-transform: uppercase;
 }
 .hpg4{
 	float: right;
@@ -102,5 +263,5 @@ a {
 	display: table !important;
 	padding-top: 1.3rem !important;
 }
-/* EndHomePage styles*/
 
+/* EndHomePage styles*/
