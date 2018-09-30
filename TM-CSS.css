@@ -43,6 +43,14 @@ p {
 	padding: 8px 20px;
 	
 }
+a {
+	text-decoration: none;
+	color: crimson;
+	font-size: 11px;
+}
+a:hover {
+	color: rebeccapurple;
+}
 .shadow,.nav,.header1,.header2,.content,.content2 {
 	box-shadow:0 2px 4px 0 #00000029,0 2px 10px 0 #0000001f;
 }
@@ -202,7 +210,11 @@ li.col:hover, a.button:hover {
 	color: rebeccapurple;
 	
 }
-
+#Bibliographie {
+	font-size: 15px;
+	font-weight: 500;
+	text-decoration: underline;
+}
 
 /* End Navbar */
 
