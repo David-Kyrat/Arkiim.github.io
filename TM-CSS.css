@@ -7,7 +7,7 @@ body {
 body.idx{	
 	margin: 0;
 	padding: 0;
-	background-image: url(https://arkiim.github.io/Background.png);
+	background-image: url(./IMGs/Background.png);
 	background-origin: padding-box;
 	background-size: cover; 
 	background-attachment: fixed;
