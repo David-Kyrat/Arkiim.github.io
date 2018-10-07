@@ -242,17 +242,13 @@ hr {
 }	
 #active {
 	color: white;
-	background-color: hsl(120, 30%, 30%);
+	background-color: hsl(180, 100%, 25%);
 }
-#active:hover, #active a:hover{
+#active:hover, #active a:hover, li.col:hover, a.button:hover {
 	color: rebeccapurple;
 	background-color: white;
 }
-li.col:hover, a.button:hover {
-	background-color: white;
-	color: rebeccapurple;
-	
-}
+
 /* End Navbar */
 
 /* Beginning Headers */
