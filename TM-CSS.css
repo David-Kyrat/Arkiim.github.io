@@ -165,19 +165,17 @@ hr {
 	text-align: center;
 }
 .photo2 {
-	display:block;
-	text-align: center;
-	align-items: center;
-	width: 60%;
-	height: 380px;
-	margin: 0 auto;
+
 }
 .photo3{
 	width: 90%;
 	height: 300px;
+
 }
 .content3 img {
 	width: 90%;
+	margin-top: 15px;
+	border: 2px solid black; 
 }
 .caption, .content3 span {
 	font-family: serif;
@@ -187,7 +185,7 @@ hr {
 	display: block;
 	width: 100%;
 	position: relative;
-	top: 15px;
+	top: 10px;
 }
 .content3 span {
 	position: initial;
