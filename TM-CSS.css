@@ -10,7 +10,7 @@ body.idx{
 	background-image: url(./IMGs/Background.png);
 	background-origin: padding-box;
 	background-size: cover; 
-	background-attachment: fixed;
+	background-attachment:tit fixed;
 	background-position: center center;
 }
 * {
@@ -41,6 +41,9 @@ h2,h3 {
 	font-weight: 300;
 	padding: 15px 0 5px 0;
 }
+h3 {
+	font-size: 21px;
+}
 p {
 	font-size: 17px;
 	text-align: justify;
@@ -49,14 +52,17 @@ p {
 }
 a {
 	text-decoration: none;
-	color: crimson;
+	color :crimson;rebeccapurple
 	font-size: 11px;
 }
 a:hover {
-	color: rebeccapurple;
+	color:rebeccapurple;crimson
 }
-.big {
+.big, .bigN {
 	font-size:17px;
+}
+.bigN{
+	font-weight: 700;
 }
 .shadow,.nav,.header1,.header2,.content,.content2, .content3, .content2i {
 	box-shadow:0 2px 4px 0 #00000029,0 2px 10px 0 #0000001f;
@@ -76,10 +82,34 @@ a:hover {
 .pad {
 	padding: 10px 8px;
 }
+#marg1{
+	margin-right:30px;
+	word-spacing: 1px; 
+}
+#c2 {
+	position: relative;
+	left: 80px;
+}
+.marg {
+	margin: 5px 25px;
+}
+ul {
+	padding-inline-start: 20px;
+}
+ul li {
+	align-items: center;
+	justify-content: center;
+	width: 60%;
+	text-align: justify;
+	margin: 0 auto;
+}
+
+#marg1 li {
+	width: 80%;
+}
 .lmarg, .header2, .nav {
 	margin-top:1px;
 }
-
 .flexC {
 	display: flex;
 	flex-wrap: wrap;
@@ -145,6 +175,7 @@ a:hover {
 .nm {
 	margin-right: 47px !important;
 }
+
 hr {
 	margin: 10px 16px;
 	border: 0;
@@ -172,8 +203,8 @@ hr {
 }
 .photo1{
 	border: 2px solid teal;
-	text-align: center;
 }
+
 .photo2 {
 	display:inline-block;
 	width: 70%;
@@ -183,6 +214,9 @@ hr {
 	width: 90%;
 	height: 300px;
 
+}
+ {
+	color: rebeccapurple;
 }
 .photo4{
 	height: 400px;
@@ -213,14 +247,17 @@ hr {
 
 .biob li {
 	display: block;
-	margin-right:35px;	
+	margin-right:35px;
+	text-align:center;
+	width: 100%;
 }
 .biob ul {
 	display: block;
+	padding-inline-start: 25px;
 }
 
 .biob a {
-	font-size: 13px;
+	font-size: 14px;
 }
 .biob h2{
 	border-top: 2.4px groove teal;
@@ -304,7 +341,7 @@ hr {
 
 .header1{
 	text-align:left;
-	background-color: crimson;	
+	background-color: crimson;
 }
 .header2{
 	float: right;
