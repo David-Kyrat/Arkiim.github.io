@@ -258,6 +258,10 @@ hr {
 
 .biob a {
 	font-size: 14px;
+	color: rebeccapurple;
+}
+.biob a:hover {
+	color: crimson;
 }
 .biob h2{
 	border-top: 2.4px groove teal;
