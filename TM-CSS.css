@@ -89,6 +89,9 @@ a:hover {
 .pad {
 	padding: 10px 8px;
 }
+#nopad {
+	padding: 0;
+}
 #marg1{
 	margin-right:30px;
 	word-spacing: 1px; 
