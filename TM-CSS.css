@@ -133,15 +133,19 @@ ul li {
 	font-weight: lighter;
 }
 
-.title {
+.titleHi, .titleH {
 	background-image: url(https://memoire-histoire.fr/wp-content/uploads/2017/06/les-fondamentaux-histoire-3-710x400.jpg);
 	background-size: cover;
 	width: 100%;
 	height:270px;
 	background-attachment: fixed;
 }
-
-.title2 {
+.titleH {
+	background-image: url(./IMGs/html.png);
+	background-size: contain;
+	background-repeat: repeat;
+}
+.title2, .title2H {
 	margin: 50px 60px;
 	width: 40%;
 	display: inline-block;
@@ -151,6 +155,10 @@ ul li {
 	font-size: 50px;
 	font-weight: 600;
 	color: hsl(0, 100%, 35%);
+}
+.title2H{
+	float: right;
+	padding: 10px 0 10px 6%;
 }
 .content1 {
 	padding: 0px 20px;
@@ -252,7 +260,17 @@ hr {
 #widthA li{
 	padding-bottom: 10px;	
 }
+.list ol{
+	margin-block-start:0;
+	padding-left: 60px;
+}
+.list p {
+	margin-bottom: 0;
+}
 
+#pa{
+	padding-bottom: 10px;
+}
 /* Beginning Bibiliographie */
 
 .biob li {
