@@ -54,7 +54,7 @@ p {
 	padding: 8px 20px;
 	
 }
-a {
+a{
 	text-decoration: none;
 	color :crimson;rebeccapurple
 	font-size: 11px;
@@ -91,6 +91,9 @@ a:hover {
 }
 #nopad {
 	padding: 0;
+}
+#nomarg{
+	margin: 0;
 }
 #marg1{
 	margin-right:30px;
@@ -175,7 +178,10 @@ ul li {
 	line-height: 1.6;
 	text-align: justify;
 }
-
+.content a, .content1 a, .content2 a, .content3 a, .content2i a {
+	margin:0;
+	padding:0;
+}
 .content2, .content2i {
 	width: 100%;
 	position: relative;
@@ -209,7 +215,7 @@ hr {
 	height: 100%;
 	padding: 20px 10px;
 }
-.photo,.photo1,.photo2,.photo3,.photo4{
+.photo,.photo1,.i1, .photo2,.photo3,.photo4{
 	margin: 0px 15px ;
 	display: inline-block;
 	width: 45%;
@@ -219,10 +225,12 @@ hr {
 .photo{
 	height: 300px;
 }
-.photo1{
+.photo1,.i1{
 	border: 2px solid teal;
 }
-
+.i1{
+	height: 300px;
+}
 .photo2 {
 	display:inline-block;
 	width: 70%;
@@ -241,7 +249,6 @@ hr {
 	width: 90%;
 	padding: 5px;
 	margin-top: 25px;
-
 }
 .caption {
 	font-family: serif;
