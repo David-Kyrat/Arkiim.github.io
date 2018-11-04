@@ -28,7 +28,7 @@ body.idx{
 	width: 1259px;
 }
 .container, .container2 {
-	margin:0, auto;
+	margin: 0 auto;
 	width: 1260px;
 }
 
@@ -54,13 +54,16 @@ p {
 	padding: 8px 20px;
 	
 }
-a{
+a, #alt{
 	text-decoration: none;
 	color :crimson;rebeccapurple
 	font-size: 11px;
 }
-a:hover {
+a:hover, #alt:hover {
 	color:rebeccapurple;crimson
+}
+#alt{
+	padding-left: 10px;
 }
 .big, .bigN {
 	font-size:17px;
@@ -123,6 +126,9 @@ ul li {
 .lmarg, .header2, .nav {
 	margin-top:1px;
 }
+.flex{
+	display: flex;
+}
 .flexC {
 	display: flex;
 	flex-wrap: wrap;
@@ -172,7 +178,7 @@ ul li {
 .content, .content1, .content2, .content3, .content2i {
 	background-color:white;
 	display: block;
-	width: 85%;
+	width: 900px;
 	margin: 2px auto;
 	padding: 20px 35px;
 	line-height: 1.6;
@@ -182,10 +188,12 @@ ul li {
 	margin:0;
 	padding:0;
 }
-.content2, .content2i {
-	width: 100%;
+
+.content2, .content2i{
+	width: 910px;
 	position: relative;
-	margin: 30px;
+	margin: 30px auto;
+	padding-left: 43px;
 }
 .content2i{
 	margin: 5px auto;
@@ -194,7 +202,7 @@ ul li {
 .content3 {
 	padding: 5px 0;
 	text-align: center;
-	width: 60%;
+	width: 638.4px;
 }
 .nm {
 	margin-right: 47px !important;
@@ -211,16 +219,18 @@ hr {
 	flex-wrap: wrap;
 	justify-content: center;
 	overflow: hidden;
-	width: 75%;
+	width: 750px;
 	height: 100%;
 	padding: 20px 10px;
 }
-.photo,.photo1,.i1, .photo2,.photo3,.photo4{
+.photo,.photo,.photo1,.i1, .photo2,.content3 img ,.photo4{
 	margin: 0px 15px ;
 	display: inline-block;
-	width: 45%;
+	width: 375.47px;
 	border: 2px solid black;
 	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
 .photo{
 	height: 300px;
@@ -231,24 +241,19 @@ hr {
 .i1{
 	height: 300px;
 }
-.photo2 {
-	display:inline-block;
-	width: 70%;
-	height: auto;
-}
-.photo3{
-	width: 90%;
-	height: 300px;
+#DAUPH{
+	height: 200px;
+	padding:2px;
 }
 .photo4{
-	height: 400px;
-	width: 80% !important;
+	height: 400px !important;
+	width: 510.71px !important;
 	position: relative;
 }
 .content3 img {
-	width: 90%;
-	padding: 5px;
+	width: 574.55px;
 	margin-top: 25px;
+	height: 300px;
 }
 .caption {
 	font-family: serif;
@@ -256,7 +261,6 @@ hr {
 	font-size: 14px;
 	font-style:italic;
 	display: block;
-	width: 100%;
 	position: relative;
 	top: 10px;
 }
@@ -278,19 +282,56 @@ hr {
 #pa{
 	padding-bottom: 10px;
 }
+/* Beginning ABV */
+
+.ABV h2{
+	border-top: 2.4px groove teal;
+	border-bottom: 2.4px groove teal;
+	display: inline-block;
+	padding: 5px 10px;
+}
+.ABV ol{
+	padding-inline-start:0;
+}
+.ABV li{
+	margin: 10px 15px;
+	padding-left: 10px;
+	width: 30%;
+	list-style-type: none;
+	height: 30px;
+}
+#sp{
+	padding-left: 0;
+	margin-left: 0;
+}
+#ABV{
+	float: left !important;
+}
+/* End ABV */
+
 /* Beginning Bibiliographie */
 
 .biob li {
 	display: block;
 	margin-right:35px;
 	text-align:center;
-	width: 100%;
+	width: 55%;
+	margin: 0 auto;
+	padding: 7px 0;
 }
 .biob ul {
-	display: block;
-	padding-inline-start: 25px;
+	padding-inline-start: 20px;
+	margin-top: 10px;
+	width: 100%;
 }
-
+.p{
+	position: relative;
+	left: 50px;
+}
+.r{
+	position: relative;
+	right: 65px;
+}
 .biob a {
 	font-size: 14px;
 	color: rebeccapurple;
@@ -304,7 +345,15 @@ hr {
 	display: inline-block;
 	padding: 5px 10px;
 }
-#Bibliographie,#Bibliographie:hover  {
+
+.biob h4{
+	font-weight: 300;
+	margin-block-start:10px;
+	margin-inline-start:0;
+	margin-left: 0;
+	padding-top: 0;	
+}
+#Bibliographie,#Bibliographie:hover, #ABV, #ABV:hover{
 	font-size: 15px;
 	font-weight: 500;
 	display: block;
@@ -313,7 +362,7 @@ hr {
 	margin: 20px;
 	float: right;
 }
-#Bibliographie:hover {
+#Bibliographie:hover, #ABV:hover{
 	border: 1px solid white;
 	background-color:crimson;
 	color: white;
@@ -381,12 +430,14 @@ hr {
 .header1{
 	text-align:left;
 	background-color: crimson;
+	width: 850.67px;
 }
 .header2{
 	float: right;
 	background-color: teal;
 	font-size: 16px;
 	margin-bottom: 0px;
+	width: 440.67px;
 }
 .header2 h2 {
 	font-weight: initial;
