@@ -54,6 +54,9 @@ p {
 	padding: 8px 20px;
 	
 }
+li {
+	padding-bottom: 100px; 
+}
 a, #alt{
 	text-decoration: none;
 	color :crimson;rebeccapurple
@@ -103,7 +106,8 @@ a:hover, #alt:hover {
 	word-spacing: 1px; 
 }
 .padd {
-	padding-left: 90px;	
+	padding-left: 90px;
+	padding-bottom: 20px;	
 }
 .padd li{
 	padding-bottom: 8px;
@@ -129,7 +133,12 @@ ul li {
 	text-align: justify;
 	margin: 0 auto;
 }
-
+#jk a{
+	color: rebeccapurple ;
+}
+#jk a:hover{
+	color: crimson;
+}
 #marg1 li {
 	width: 80%;
 }
@@ -253,7 +262,7 @@ hr {
 	height: 300px;
 }
 #DAUPH{
-	height: 200px;
+	height: 160px;
 	padding:2px;
 }
 .photo4{
@@ -265,6 +274,12 @@ hr {
 	width: 574.55px;
 	margin-top: 25px;
 	height: 300px;
+}
+#content31{
+	width: 900px;
+}
+#content31 img {
+	width: 824.54px !important;
 }
 .caption {
 	font-family: serif;
@@ -291,11 +306,17 @@ hr {
 }
 
 #pa{
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 }
 #m{
 	margin-top: 7px;
 }
+.cen{
+	width: 750px;
+	margin:0 auto;
+	text-align: justify;
+}
+
 /* Beginning ABV */
 
 .ABV h2{
