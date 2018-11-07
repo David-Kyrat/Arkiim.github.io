@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TM 2018 Noah Munz - Structure des éléments HTML</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="TM-CSS.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300|Work+Sans:400,500,600,700,800,900c|Raleway:300,400,700|Lato:400,700,900" rel="stylesheet">
+<body>
+  <div class="headers">
+    <div class="header1">
+      <h1>Sites Web : Du Passé au Futur en Passant par la Création</h1>
+    </div>
+    <div class="header2 right">
+      <h2>L'Exemple de la Création de Mon Site</h2>
+    </div>
+  </div><br><br><br>
+  <ul class="nav flexC">
+    <li class="col"><a class="button"href="./index.html">Home</a></li>
+    <li class="col"><a class="button"href="./Histoire.html">Histoire</a></li>
+    <li class="col" id="active"><a class="button active"href="./HTML.html">HTML</a></li>
+    <li class="col"><a class="button"href="./CSS.html">CSS</a></li>
+    <li class="col"><a class="button"href="./JavaScript.html">JavaScript</a></li>
+    <li class="col"><a class="button"href="./Conclusion.html">Conclusion</a></li>
+  </ul>
+  <div class="titleH">  
+    <h1 class="title2H"> Partie 2 : HTML</h1>
+  </div>
+ <!-- End Header-->
+  <div class="container">
+    <div class="centerH content1 pad">
+      <h3>Structure des éléments HTML</h3>
+      <p>Les éléments HTML sont rangés de manière "généalogique", c'est à dire qu'il y a une hiérarchisation des éléments en fonction de si l'élément est parent ou enfant.
+      <br>Si un élément HTML en contient un autre, alors on l'appelle "élément parent".<br> Cependant, si un élément HTML est contenu dans un autre, alors on l'appelle "élément enfant".<br> On dit que l'élément enfant est imbriqué dans l'élément parent.</p>
+      <p>Si l'on regarde cet exemple tiré de la partie Histoire, la balise &lt;div&gt; sert à diviser le code en parties distinctes, ce qui le structure. La balise &lt;p&gt; quant à elle, est tout simplement l'élément paragraphe.</p>
+      <div class="pic">
+        <div class="content3 pho">
+          <a target="_blank" href="./IMGs/str-html.png"><img src="./IMGs/str-html.png"></a>
+        </div>
+      </div>
+      <p>Dans cet exemple, l'élément &lt;div&gt; (tout en haut) est le parent des éléments ci-après et les éléments &lt;h2&gt; et &lt;p&gt; (qui sont frères et soeurs entre eux) sont les enfants de &lt;div class="content1"&gt;, mais aussi les petits-enfants de &lt;div class="container"&gt;, ils sont imbriqués dans les divs.</p>
+      <p>Une chose très importante qui nous permet de reconnaitre les éléments parents des enfants, ainsi que d'avoir un code clair, est l'identation. L'identation est l'espace qui sépare le début de la balise de l'élément au tout début de la ligne. A chaque fois qu'on passe d'un élément parent à un élément enfant, le code s'indente automatiquement <br> (exemple : passage de la ligne 25 à 26, 31 à 32, 32 à 33 ...)<br> 
+      L'indentation est caractérisé par les lignes verticales qui relient la balise ouvrante et la balise fermante tout en permettant de suivre leur position.</p>
+<!-- END -->
+      <h5>
+        <a id="ABV" href="./ABV.html">Liste des abréviations</a>
+      </h5>
+      <h5>
+        <a id="Bibliographie" href="./Bibliographie.html">Autres sources</a>
+      </h5>
+    </div>
+  </div>
+</body>

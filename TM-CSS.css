@@ -54,9 +54,6 @@ p {
 	padding: 8px 20px;
 	
 }
-li {
-	padding-bottom: 100px; 
-}
 a, #alt{
 	text-decoration: none;
 	color :crimson;rebeccapurple
@@ -218,7 +215,9 @@ ul li {
 	margin: 5px auto;
 	width: 1184px;
 }
-
+.ctnt2{
+	width: 927px;
+}
 .content3 {
 	padding: 5px 0;
 	text-align: center;
@@ -275,6 +274,18 @@ hr {
 	margin-top: 25px;
 	height: 300px;
 }
+.cen{
+	width: 750px;
+	margin:0 auto;
+	text-align: justify;
+}
+.pho3{
+	width: 568px;
+}
+.pho3 img {
+	width: 430px;
+	height: 350px;
+}
 #content31{
 	width: 900px;
 }
@@ -311,12 +322,22 @@ hr {
 #m{
 	margin-top: 7px;
 }
-.cen{
-	width: 750px;
-	margin:0 auto;
-	text-align: justify;
+.pho2{
+	width: 800px;
 }
-
+.pho2 img{
+	width: 750px;
+	height: 230px;
+	margin-bottom: 15px;
+}
+.pho {
+	width: 950px;
+}
+.pho img {
+	width: 900px;
+	height: 260px;	
+	margin: 15px auto;
+}
 /* Beginning ABV */
 
 .ABV h2{
