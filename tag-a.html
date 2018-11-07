@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TM 2018 Noah Munz - La balise &lt;img&gt;</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="TM-CSS.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300|Work+Sans:400,500,600,700,800,900c|Raleway:300,400,700|Lato:400,700,900" rel="stylesheet">
+<body>
+  <div class="headers">
+    <div class="header1">
+      <h1>Sites Web : Du Passé au Futur en Passant par la Création</h1>
+    </div>
+    <div class="header2 right">
+      <h2>L'Exemple de la Création de Mon Site</h2>
+    </div>
+  </div><br><br><br>
+  <ul class="nav flexC">
+    <li class="col"><a class="button"href="./index.html">Home</a></li>
+    <li class="col"><a class="button"href="./Histoire.html">Histoire</a></li>
+    <li class="col" id="active"><a class="button active"href="./HTML.html">HTML</a></li>
+    <li class="col"><a class="button"href="./CSS.html">CSS</a></li>
+    <li class="col"><a class="button"href="./Conclusion.html">Conclusion</a></li>
+  </ul>
+  <div class="titleH">  
+    <h1 class="title2H"> Partie 2 : HTML</h1>
+  </div>
+ <!-- End Header-->
+  <div class="container">
+    <div class="centerH content1 pad">
+      <h2>La balise &lt;a&gt;</h2>
+      <p>Comme expliqué dans la partie <a class="bigN" href="./Histoire.html">Histoire</a>, la  balise &lt;a&gt; est le nerf du Web, l'unique moyen de trouver son chemin jusqu'a la prochaine page ou jusqu'au prochain site. Cependant il existe différentes de manière de lier les pages entre elles, différents types de chemin, mais avant d'expliquer ceci, il faut d'abord comprendre de quoi est constitué l'élément &lt;a&gt;.</p>
+      <div class="pic">
+        <div class="content3 pho2 pl">
+          <a href="./IMGs/a-tag.png"><img id="pht" src="./IMGs/a-tag.png"></a>
+        </div>
+      </div>
+      <p>Avec "a" pour "anchor" (ancre en anglais), l'élément &lt;a&gt; est tel une ancre qui va venir se loger et lier fermement deux site ou partie de site. Il composé exactement comme l'élément &lt;img&gt;, la balise &lt;a&gt; avec dedans un attribut qui lie encore vers quelque part, "href" pour "hypertext reference".</p>
+      <p>Comme dit précédemment dans la partie <a class="bigN" href="HTML.html">HTML</a>, le site se comporte comme un gros dossier. Si la navigateur lit, affiche un des fichier html, il est aussi courant de tout les autres fichier et dossier qui sont dans le même dossier. Par exemple, tout les fichiers html de ce site sont rangé dans le même dossier et les images sont rangées au même endroit regroupées dans un dossier nommé "IMGs", actuellement le navigateur affiche cette page, mais il connait l'existence de tout les autres fichiers du site et pour pouvoir y accéder, il faut juste lui donner le "chemin relatif" jusqu'à eux.</p>
+      <p>Le chemin relatif est le chemin dont le point de départ est l'endroit où l'on se trouve actuellement, l'emplacement du fichier que l'on consulte. Il s'écrit comme sur la photo : chaque chemin relatif commence par "./" ces deux symboles annonce que l'on commence à chercher depuis notre position, que l'on utlise un chemin relatif, ensuite la suite du chemin est exactement la même que n'importe quel chemin de fichier qu'on aurait cherché dans l'explorateur de fichier de l'ordinateur.</p>
+      <div class="pic">
+        <div class="content3 pl">
+          <a href="./IMGs/rel-path.png"><img src="./IMGs/rel-path.png"></a>
+        </div>
+      </div>
+      <p>Dans cette photo du code de la barre de navigation, on retrouve plein de chemin relatif qui pointent vers les différentes parties du site. Quand le navigateur verra, par exemple, le second lien, il cherchera dans le dossier actuel le fichier qui se nomme "Histoire.html". Les chemins relatifs ont plusieurs avantages non négligeables sur leurs pairs les chemins "absolues" (ceux que l'on l'habitude de voir) du type "https://www.sitesweb-dupasséaufutur.com/Histoire.html".</p>
+      <p> Premièrement ils sont beaucoup plus court ("./Histoire.html") et deuxièmement étant donné qu'ils font référence au dossier dans lequel on se trouve il n'y a aucun risque de se perdre, de perdre le fichier, qu'il ai disparu du site où on avait prit telle ou telle image ou encore que le navigateur n'arrive pas à le trouver.</p>
+<!-- END -->
+      <h5>
+        <a id="ABV" href="./ABV.html">Liste des abréviations</a>
+      </h5>
+      <h5>
+        <a id="Bibliographie" href="./Bibliographie.html">Autres sources</a>
+      </h5>
+    </div>
+  </div>
+</body>

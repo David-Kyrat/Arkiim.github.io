@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TM 2018 Noah Munz - La balise &lt;img&gt;</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="TM-CSS.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300|Work+Sans:400,500,600,700,800,900c|Raleway:300,400,700|Lato:400,700,900" rel="stylesheet">
+<body>
+  <div class="headers">
+    <div class="header1">
+      <h1>Sites Web : Du Passé au Futur en Passant par la Création</h1>
+    </div>
+    <div class="header2 right">
+      <h2>L'Exemple de la Création de Mon Site</h2>
+    </div>
+  </div><br><br><br>
+  <ul class="nav flexC">
+    <li class="col"><a class="button"href="./index.html">Home</a></li>
+    <li class="col"><a class="button"href="./Histoire.html">Histoire</a></li>
+    <li class="col" id="active"><a class="button active"href="./HTML.html">HTML</a></li>
+    <li class="col"><a class="button"href="./CSS.html">CSS</a></li>
+    <li class="col"><a class="button"href="./Conclusion.html">Conclusion</a></li>
+  </ul>
+  <div class="titleH">  
+    <h1 class="title2H"> Partie 2 : HTML</h1>
+  </div>
+ <!-- End Header-->
+  <div class="container">
+    <div class="centerH content1 pad">
+      <h2>La balise &lt;img&gt;</h2>
+      <p>Comme dit précédemment, les sites d'aujourd'hui regorgent d'images, mais comment sont-elles intégrés au site ? <br>
+      Comme tout, avec un élément html : La balise &lt;img&gt;. Pour expliquer son fonctionnement il va falloir prendre de l'avance sur la partie CSS et expliquer les notions de "<em>atttribute value</em>" et "<em>attribute name</em>".</p>
+      <p> l'élément "img" s'écrit de cette manière, comme on peut le voir sur cette photo qui est elle-même le code de la photo :</p>
+      <div class="pic">
+        <div class="content3 pho2">
+          <a href="./IMGs/attr.png"><img src="./IMGs/attr.png"></a>
+        </div>
+      </div>
+      <p>Le contenu de cet élément "img" contient ce qu'on appelle un "attribut", l'attribut est composé de son nom (attribute name) et de sa valeure (attribute value).
+      Ici, l'attribut est tout ce qui est dans la balise et qui n'est pas rouge.<br> 
+      La partie verte représente le nom qui est : "src" (source), qui indique au navigateur qu'il doit rechercher quelque chose, en l'occurance une image, à l'adresse fournie et cette adresse, en jaune, entre guillemets, est la valeure de l'attribut.</p>
+      <p>Si la valeure de l'attribut ne ressemble pas à une adresse du type : "https://www.anibis.ch", c'est parce que l'adresse utilise ce qu'on appelle un "chemin relatif" qui sera expliqué tout de suite après, mais les deux sont totalement équivalent (dans leur fonction de lier).</p>
+      <p>En d'autres termes, pour que le navigateur affiche une image, il a besoin de l'ordre qui va initier cette demande : l'élément "img" et l'adresse, le "chemin" jusqu'à l'image, l'attribut "src". </p>
+<!-- END -->
+      <h5>
+        <a id="ABV" href="./ABV.html">Liste des abréviations</a>
+      </h5>
+      <h5>
+        <a id="Bibliographie" href="./Bibliographie.html">Autres sources</a>
+      </h5>
+    </div>
+  </div>
+</body>
