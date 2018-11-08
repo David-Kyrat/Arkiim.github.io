@@ -98,6 +98,10 @@ a:hover, #alt:hover {
 #nomarg{
 	margin: 0;
 }
+#marg2 {
+	margin: 6px;
+	width: 420px;
+}
 #marg1{
 	margin-right:30px;
 	word-spacing: 1px; 
@@ -202,7 +206,8 @@ ul li {
 	display: block;
 	width: 900px;
 	margin: 2px auto;
-	padding: 20px 35px;
+	padding: 20px 30px;
+	padding-right: 10px;
 	line-height: 1.6;
 	text-align: justify;
 }
@@ -251,7 +256,7 @@ hr {
 .photo,.photo,.photo1,.i1, .photo2,.content3 img ,.photo4{
 	margin: 0px 15px ;
 	display: inline-block;
-	width: 375.47px;
+	width: 385.47px;
 	border: 2px solid black;
 	text-align: center;
 	align-items: center;
@@ -298,7 +303,7 @@ hr {
 #content31 img {
 	width: 824.54px !important;
 }
-.caption {
+.caption, .caption1 {
 	font-family: serif;
 	font-weight: 300;
 	font-size: 14px;
@@ -306,6 +311,10 @@ hr {
 	display: block;
 	position: relative;
 	top: 10px;
+}
+
+.caption1{
+	btom:10px;
 }
 .content3 span {
 	position: initial;
@@ -350,6 +359,16 @@ hr {
 .pl img {
 	margin-top: 10px;
 	margin-bottom: 7px;  
+}
+.par{
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	padding-bottom: 0px;
+}
+.par span {
+	position: initial;
+	padding-bottom: 3px;
 }
 /* Beginning ABV */
 

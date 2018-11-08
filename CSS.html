@@ -26,15 +26,32 @@
   <div class="container">
     <div class="centerH content1 pad">
       <h2>A quoi sert le CSS ?</h2>
-      <p>Le CSS sert à structurer les pages, à ajouter des "règles" aux éléments html pour leurs donner une forme, une structure. Notamment grâce à outils CSS du type : aligner le texte à droite, au milieu, agrandir les marges, mettre des éléments en colonnes etc...</p>
-      <p>Le CSS stylise les éléments html, il permet de changer la couleur des éléments, rajouter un background (image de fond), change la font (police d'écriture), aggrandir des éléments, raccourcir des éléments, modifier la taille  d'une image, sa position. Le CSS permet de faire toutes ces choses là.</p>
+      <p>Le CSS sert à structurer les pages, à ajouter des "styles", des "règles" aux éléments html pour leurs donner une forme, une structure. Et ce, grâce à des propriétés CSS du type : aligner le texte à droite, au milieu, agrandir les marges, ajouter des espaces, mettre des éléments en colonnes... </p>
+      <p>Le CSS permet aussi de gérer l'aspect stylistique des éléments html, ( d'où le nom de Cascading Style Sheets ), il permet de modifier notamment, la couleur d'un titre, rajouter un background (image de fond), change la font (police d'écriture), aggrandir les éléments ou les raccourcir pour pouvoir les aligner par exemple, modifier la taille  d'une image, sa position, souligner, ajouter une bordure...</p>
       <div class="pic">
-        <div class="content2">
-          <a href="./"><img class="photo" src="./IMGs/css1.png"></a>
-          <a href=""><img class="photo" src="./IMGs/css2.png"></a>
+        <div class="content2 par">
+          <a target="_blank" href="./CSS.html"><img class="photo" id="marg2" src="./IMGs/css1.png"></a>
+          <a target="_blank" href="./CSS-sans.html"><img class="photo" id="marg2" src="./IMGs/css2.png"></a>
+          <span class="caption1 center">Comparaison entre, la page actuelle avec CSS (à gauche) et sans CSS (à droite)</span>
         </div>
       </div>
-      <p>Coder du CSS pourrait être comparé à quelqu'un utilisant libre office qui, en quelque clics, utiliser les mêmes propriétés, couleur, alignement du text... Cependant coder du CSS est beaucoup plus long, en revanche, il permet une liberté beaucoup plus grande, quasi infini et offre un meilleur contrôle.<!-- QUAND CA MARCHE CEST A DIRE 1 FOIS SUR 7 --></p>
+      <!-- POur illustrer mes propos j'ai inséré deux liens sous forme d'image, celle de gauche est la photo du site du site normal vous pouvez cliquer ca va vous ramener sur la même page. En revanche l'image de droite est une photo d'exactement la même page mais sans le css. voila ce que le CSS fait et voila à quoi ressemble une page sans CSS. C'est bien la même ont peut même retrouver les 2 images que j'ai inséré. Oui, le gros truc Rouge est bien l'image d'à côté.-->
+      <p>
+      L'utilisation du CSS, pourrait être comparé avec ce que l'on fait d'ordinaire avec un logiciel de traitement de texte de type Libre Office Writer ou même avec un powerpoint, tout ce qui n'est pas du rajout de contenu, tout ce qui n'est pas purement de l'écriture dans ces types de logiciels, on le retrouve dans le CSS.</p>
+      <p> Cependant, même si coder du CSS est bien plus long et contient bien plus de risque de bugger et de ne pas fonctionner, il permet une liberté beaucoup plus grande, offre plus de possibilités et un meilleur contrôle.<!-- QUAND CA MARCHE CEST A DIRE 1 FOIS SUR 7 --></p>
+      <h2>Lier un fichier CSS</h2>
+      <p>Etant donnée que le CSS est écrit dans un fichier à part, il faut pouvoir le rattacher aux fichiers html, sans quoi, le site ressemblera à l'image vu précédemment.
+      Pour ce faire il faut utiliser une propriété html : l'élément &lt;link&gt;.<br> 
+      L'élément &lt;link&gt; est, à l'instar de l'hyperlien classique, composé d'attributs, trois pour être précis.</p>
+      <div class="pic">
+        <div class="content3" id="content31">
+          <a target="_blank" href="./IMGs/css-link.png"><img src="./IMgs/css-link.png"></a>
+          <span class="caption center">Photo du l'élément &lt;link&gt; liant le fichier css "TM-CSS.css", au fichier html</span>
+        </div>
+      </div>
+      <p><!--Toujours avec le nom en vert et la valeure en jaune-->Le premier attribut est l'attribut "rel", pour "relation", qui spécifie la relation entre les 2 fichiers, ici il précise que le fichier lié est une feuille du style (stylesheet) du fichier de base.<br>
+      Le second est l'attribut "type" qui définit le type du fichier et le troisième, le "href" avec, comme d'habitude, un chemin relatif menant jusqu'au fichier css "TM-CSS.css". Ainsi toutes les règles et propriétés css écrites sur ce fichier faisant référence aux éléments html de ce site, seront effectives.</p> 
+      <p>Une fois le lien établi l'on peut commencer à styliser le site</p>
 
 <!-- END -->
       <h5>
