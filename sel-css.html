@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TM 2018 Noah Munz - CSS Structure</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="TM-CSS.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300|Work+Sans:400,500,600,700,800,900c|Raleway:300,400,700|Lato:400,700,900" rel="stylesheet">
+</head>
+</head>
+<body>
+  <div class="headers">
+    <div class="header1"><h1>Sites Web : Du Passé au Futur en Passant par la Création</h1></div>
+    <div class="header2 right"><h2>L'Exemple de la Création de Mon Site</h2></div>
+  </div><br><br><br>
+  <ul class="nav flexC">
+   <li class="col"><a class="button"href="./index.html">Home</a></li>
+   <li class="col"><a class="button"href="./Histoire.html">Histoire</a></li>
+   <li class="col"><a class="button"href="./HTML.html">HTML</a></li>
+   <li class="col"id="active"><a class="button active"href="./CSS.html">CSS</a></li>
+   <li class="col"><a class="button"href="./Conclusion.html">Conclusion</a></li>
+  </ul>
+  <div class="titleC">  
+    <h1 class="title2C"> Partie 3 : CSS</h1>
+  </div>
+ <!-- End Header-->
+  <div class="container">
+    <div class="centerH content1 pad">
+      <h2>Les sélecteurs</h2>
+      <p>Pour pouvoir appliquer une propriété css à l'élément html sélectionné, il faut que le navigateur trouve aisément la partie que l'on veut styliser, c'est la que les sélecteurs prennent leurs importance. Il existe trois types de sélecteur différent : </p>
+      <ol id="npad" class="padd">
+        <li>Le sélecteur balise comme ce que l'on a vu juste avant</li>
+        <li>La classe</li>
+        <li>L'ID</li>
+      </ol>
+      <p id="npad1">La classe et l'ID s'utilisent sous forme d'attribut du type &lt;div class="content"&gt; ou &lt;span id="caption"&gt;</p>
+       <p>Il y a une certaine hiérarchie au niveau du css, c'est à dire que l'on peut écrire des déclarations css sans qu'il ne ce passe rien, si le sélecteur de la déclaration fait référence à un élément déjè stylisé. La hiérarchisation se fait dans cet ordre : le sélecteur balise va faire appliquer la propriété css à tout les éléments html du même type que la balise, c'est un sélecteur très général, il est donc tout en bas de la hiérarchie. </p> 
+       <p>La classe est le sélecteur le plus commun, le plus polyvalent, elle doit être ré-inséré dans l'élément html en tant qu'attribut à chaque fois que l'on veut l'appliquer. L'ID est comme la classe mais si et une id et une classe font référence au même élément html, ce seront les propriétés de l'ID qui seront appliqués.</p>  
+      <div class="pic">
+        <div class="content2 ctnt3">
+          <a target="_blank" href=""><img id="nomarg" class="photo ch2" src="./IMGs/str-css.png"></a>
+          <a target="_blank" href=""><img id="nomar"  class="photo ch1" src="./IMGs/sel-css.png"></a>
+          <span id="caption2" class="p5 center">Exemple de selecteurs</span>
+        </div>
+      </div>
+      <p> En d'autres termes, sur la photo de droite, dans l'encadré rouge la déclaration CSS de "content31" prévaudra sur celle de "content3". <br> D'ailleurs l'on voit ici une des raison majeurs pourquoi la balise &lt;div&gt; est autant utilisée. Dans le cas ou l'élément &lt;div&gt; est l'élément parent, il transmettra une grande partie de ses propriétés css à tout ses éléments enfants (du moins celle qui marchent par héritage) <!-- parler 2sec de l'héritage -->, ce qui permet d'avoir des espacements réellement personalisables, la possibilité de gérer les éléments en groupe et individuellement en même temps.</p>
+ <!-- END -->
+      <h5>
+        <a id="ABV" href="./ABV.html">Liste des abréviations</a>
+      </h5>
+      <h5>
+        <a id="Bibliographie" href="./Bibliographie.html">Autres sources</a>
+      </h5>
+    </div>
+  </div>
+</body>

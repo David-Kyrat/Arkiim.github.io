@@ -32,8 +32,8 @@ body.idx{
 	width: 1260px;
 }
 
-h1{
-	font-family: "Lato","Arial";
+h1 {
+	font-family: "Lato", "Arial";
 	font-weight: 900;
 }
 h2,h3,h4 {
@@ -229,6 +229,11 @@ ul li {
 .ctnt2{
 	width: 927px;
 }
+.ctnt3{
+	width: 990px;
+	padding:20px;
+	padding-bottom: 5px;
+}
 .content3 {
 	padding: 5px 0;
 	text-align: center;
@@ -303,7 +308,15 @@ hr {
 #content31 img {
 	width: 824.54px !important;
 }
-.caption, .caption1 {
+.ch1{
+	width: 600px;
+	height: 250px;
+}
+.ch2 {
+	width: 314.5px;
+	height: 250px;
+}
+.caption {
 	font-family: serif;
 	font-weight: 300;
 	font-size: 14px;
@@ -313,8 +326,21 @@ hr {
 	top: 10px;
 }
 
-.caption1{
-	btom:10px;
+#caption1, #caption2{
+	font-family: serif;
+	font-weight: 300;
+	font-size: 14px;
+	font-style:italic;
+	display: block;
+	position: relative;
+	bottom: 17px;
+	height:3px;
+}
+#caption2{
+	bottom: 10px;
+}
+.p5 {
+	padding: 5px 0 !important;
 }
 .content3 span {
 	position: initial;
@@ -369,6 +395,12 @@ hr {
 .par span {
 	position: initial;
 	padding-bottom: 3px;
+}
+#npad {
+	padding-bottom: 0;
+}
+#npad1{
+	padding-top: 0;
 }
 /* Beginning ABV */
 
