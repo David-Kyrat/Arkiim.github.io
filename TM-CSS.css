@@ -162,7 +162,7 @@ ul li {
 	font-weight: lighter;
 }
 
-.titleHi, .titleH, .titleC {
+.titleHi, .titleH, .titleC, .titleConc {
 	background-image: url(https://memoire-histoire.fr/wp-content/uploads/2017/06/les-fondamentaux-histoire-3-710x400.jpg);
 	background-size: cover;
 	width: 100%;
@@ -177,7 +177,10 @@ ul li {
 .titleC {
 	background-image: url(./IMGs/css-banner.png);
 }
-.title2, .title2H, .title2C {
+.titleConc{
+	background-image: url(./IMGs/conclusion.png);
+}
+.title2, .title2H, .title2C, .title2Conc {
 	margin: 50px 60px;
 	width: 40%;
 	display: inline-block;
@@ -188,12 +191,20 @@ ul li {
 	font-weight: 600;
 	color: hsl(0, 100%, 35%);
 }
-.title2H, .title2C{
+.title2H, .title2C {
 	float: right;
 	padding: 10px 0 10px 7.5%;
 }
 .title2C {
 	margin-right: 170px;
+}
+.title2Conc {
+	text-align: center;
+	margin-top: 180px;
+	margin-left: 350px;
+	color: hsl(0, 100%, 40%);
+	border-bottom: groove 4px hsl(0, 85%, 40%);
+	border-top: groove 4px hsl(0, 85%, 40%); 
 }
 .content1 {
 	padding: 0px 20px;
@@ -401,6 +412,9 @@ hr {
 }
 #npad1{
 	padding-top: 0;
+}
+#END {
+	height: 400px;
 }
 /* Beginning ABV */
 
