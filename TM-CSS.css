@@ -65,6 +65,12 @@ a:hover, #alt:hover {
 #alt{
 	padding-left: 10px;
 }
+.alt {
+	color: crimson !important;
+}
+.alt:hover {
+	color: white !important;
+}
 .big, .bigN {
 	font-size:17px;
 }
@@ -352,6 +358,10 @@ hr {
 }
 .p5 {
 	padding: 5px 0 !important;
+}
+.gh {
+	position: relative;
+	margin-top: 5px;
 }
 .content3 span {
 	position: initial;
