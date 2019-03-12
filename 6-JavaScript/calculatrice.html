@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<title>Calculatrice JV</title>
+    	<link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script|Tangerine:400,700" rel="stylesheet">
+    	<link rel="stylesheet" type="text/css" href="./calculette.css">
+	    <script type="text/javascript">
+	    	var res = "";
+		    var n = 0;
+		    var a = 0;
+		    var b = 0;
+		    var e = 0;
+		    var ch = 0;
+
+		    function zero(){
+		    	res += "0";
+		    	document.getElementById('result').innerHTML = res;
+		   	 	a = document.getElementById('result').innerHTML;
+		    }
+
+		    function one(){
+		    	res += "1";
+		    	document.getElementById('result').innerHTML = res;
+		    	a = document.getElementById('result').innerHTML;
+		    }
+
+		    function two(){
+		    	res += "2";
+		    	document.getElementById('result').innerHTML = res;
+		    	a = document.getElementById('result').innerHTML;
+		    }
+
+		    function three(){
+		    	if (res==0){
+		    		res = "3";
+		    } 	else{
+		    		res += "3";
+		    }
+		    	document.getElementById('result').innerHTML = res;
+		   		a = document.getElementById('result').innerHTML;
+		    }
+		    function four(){
+		    	res += "4";
+				document.getElementById('result').innerHTML = res;
+		    	a = document.getElementById('result').innerHTML;
+		    }
+
+		    function five(){
+		    	res += "5";
+				document.getElementById('result').innerHTML = res;
+		    	a = document.getElementById('result').innerHTML;
+		    }
+
+		    function six(){
+		    	res += "6";
+				document.getElementById('result').innerHTML = res;
+		    	a = document.getElementById('result').innerHTML;
+		    }
+
+		    function seven(){
+		    	if (res==0){
+		    		res = "7";
+		    } 	else {
+		    		res += "7";
+		    }
+		    	document.getElementById('result').innerHTML = res;
+		    	a = document.getElementById('result').innerHTML;
+		    }
+
+		    function eight(){
+		    	res += "8";
+		    	document.getElementById('result').innerHTML = res;
+		    	a = document.getElementById('result').innerHTML;
+		     }
+
+		    function nine(){
+		    	res += "9";
+		    	document.getElementById('result').innerHTML = res;
+		    	a = document.getElementById('result').innerHTML;
+		    }
+
+		    function point(){
+		    	res += ".";
+		    	document.getElementById('result').innerHTML = res;
+		    }
+
+		    function C(){
+		    	a = 0;
+		    	res = " ";
+		    	document.getElementById("result").innerHTML= " ";
+		    }
+
+		    function CA(){
+		    	res =" " ;
+		    	a = " ";
+		    	b = 0;
+		    	c = 0;
+		    	e=0; document.getElementById('result').innerHTML = res;
+		    }
+
+		    function add(){
+		    	if (res ===" "){
+		    		b = c;
+		    }	else {
+		    		b = res;
+		    }
+		    	document.getElementById('result').innerHTML = res + " +";
+		    	res = " ";
+		     	e=1; // on a 1 en res on l'enregistre dans a, il faut après enregistre le 2e res dans une autre var
+		     }
+
+		    function multiply() {
+		    	if (res ===" "){
+		     		b = c;
+		    }	else {
+		     		b = res;
+		    }
+		    	document.getElementById('result').innerHTML = res + " *";
+		     	res = " ";
+		    	e = 2;
+		    }
+
+		    function cos(){
+		    	if (res ===" "){
+		     		a = c;
+		    }	else {
+		     		a = res;
+		    }
+		    	document.getElementById('result').innerHTML = "cos (" + res + ")" ;
+		    	e = 7;
+		    }
+
+		    function Multiply(){
+		    	if (ch == 0) {
+		    		multiply();
+		   	}	else {
+		    		cos();
+		    }
+		    }
+
+		    function divide() {
+		    	if (res ===" "){
+		    		b = c;
+		    }	else {
+		    		b = res;
+		    }
+		    	document.getElementById('result').innerHTML = res + " /";
+		    	res = " ";
+		    	e = 3;
+		    }
+
+		    function sin(){
+		    	if (res ===" "){
+		     		a = c;
+		    }	else {
+		     		a = res;
+		    }
+		    	document.getElementById('result').innerHTML = "sin (" + res + ")" ;
+		    	e = 8;
+		    }
+
+		    function Divide(){
+		    	if (ch == 0) {
+		    		divide();
+		    }	else {
+		    		sin();
+		    }
+		    }
+
+		    function substract() {
+		    	if (res ===" "){
+		   			b = c;
+		    }	else {
+		    		b = res;
+		    }
+		    	document.getElementById('result').innerHTML = res + " -";
+		    	res = " ";
+		    	e = 4;
+		    }
+
+		    function power() {
+		    	if (res ===" "){
+		    		b = c;
+		    }	else {
+		    		b = res;
+		    }
+		    	document.getElementById('result').innerHTML = res + " ^";
+		    	res = " ";
+		    	e = 5;
+		    }
+
+		    function tan(){
+		    	if (res ===" "){
+		     		a = c;
+		    }	else {
+		     		a = res;
+		    }
+		    	document.getElementById('result').innerHTML = "tan (" + res + ")" ;
+		    	e = 9;
+		    }
+
+		    function Power(){
+		    	if (ch == 0) {
+		    		power();
+		    }	else {
+		    		tan();
+		    }
+		    }
+
+		    function sqrt() {
+		    	if (res ===" "){
+		    		b = c;
+		    }	else {
+		    		b = res;
+		    }
+		    	document.getElementById('result').innerHTML = "√" + res ;
+		    	res = " ";
+		    	e = 6;
+		    }
+
+		    function euler(){
+		    	if (res ===" "){
+		    		b = c;
+		    }	else {
+		    		b = res;
+		    }
+		    	document.getElementById('result').innerHTML = "e^" + res ;
+		    	res = " ";
+		    	e = 10;
+		    }
+
+		    function Sqrt(){
+		    	if (ch == 0) {
+		    		sqrt();
+		    }	else {
+		    		euler();
+		    }
+		    }
+
+
+		    function ans(){
+		    	res += c;
+		    	document.getElementById('result').innerHTML = res;
+		    	a = document.getElementById('result').innerHTML;
+		    }
+
+		    function equal(){
+		    	switch (e) {
+		    	default:
+		     		document.getElementById('result').innerHTML = res;
+		     	break;
+		    	case 1:
+		     		res = parseFloat(b) + parseFloat (a);
+		     		document.getElementById('result').innerHTML = b + " + " + a + " = " + res;
+		     	break;
+		    	case 2:
+		    		res = parseFloat(b) * parseFloat(a);
+		    		document.getElementById('result').innerHTML = b + " * " + a + " = " + res;
+		    	break;
+		    	case 3:
+		    		res = parseFloat(b) / parseFloat(a);
+		    		document.getElementById('result').innerHTML = b + " / " + a + " = " + res;
+		    	break;
+		    	case 4:
+		    		res = parseFloat(b) - parseFloat(a);
+		    		document.getElementById('result').innerHTML = b + " - " + a + " = " + res;
+		    	break;
+		    	case 5:
+		    		res = parseFloat(b) ** parseFloat(a);
+		    		document.getElementById('result').innerHTML = b + ' <span class="re">' + a + "</span>" + "= " + res;
+		    	break;
+		    	case 6:
+		    		res = Math.sqrt(parseFloat(b));
+		    		document.getElementById('result').innerHTML = "√"+a +" = " +res;
+		    	break;
+		    	case 7:
+		    		res = Math.cos(parseFloat(a));
+		    		document.getElementById('result').innerHTML = "cos("+a+") " + "= " + res;
+		    	break;
+		    	case 8:
+		    		res = Math.sin(parseFloat(a));
+		    		document.getElementById('result').innerHTML = "sin("+a+") " + "= " + res;
+		    	break;
+		    	case 9:
+		    		res = Math.tan(parseFloat(a));
+		    		document.getElementById('result').innerHTML = "tan(" +a+") " + "= " + res;
+		    	break;
+		    	case 10:
+		    		res= ((Math.E)**parseFloat(a));
+		    		document.getElementById('result').innerHTML = "e <span class='re'> " + a + " </span> "+ " = "+ res;
+		     	}
+		    	c = res;;
+		    	res=" ";
+		    	b = 0;
+		    	a = 0;
+		     }
+		    function change(){
+		    	if (ch == 0){
+		    		ch = 1;
+		    		// document.getElementById('result').innerHTML = res + ch;
+		    		document.getElementById('sin').innerHTML = "sin <div id=upper> / </div>" ;
+		    		document.getElementById('tan').innerHTML = "tan <div id=upper> x<span class='powup'>n</span> </div>" ;
+		    		document.getElementById('e^x').innerHTML = "<div>e<span class='nup'>x</span></div> <div id=uppersq>√<span class='sqrtup'>x</span> </div>" ;
+		    		document.getElementById('cos').innerHTML = "cos <div id=upper> * </div>" ;
+		    }	else {
+		    		ch = 0;
+		    		// document.getElementById('result').innerHTML = res + ch;
+		    		document.getElementById('sin').innerHTML = "/ <div id=upper>sin</div>" ;
+		    		document.getElementById('tan').innerHTML = "<div>x<span class='nup'>n</span></div> <div id=uppertan>tan</div>" ;
+		    		document.getElementById('e^x').innerHTML = '<div> √ <span class="sqrt"> x </span> </div> <div id=uppersq>e<span class="powup">x</span> </div>' ;
+		    		document.getElementById('cos').innerHTML = "* <div id=upper>cos</div>" ;
+		    	}
+		    }
+		</script>
+	</head>
+	<body><div class="flex-img">
+		<table>
+			<tr>
+				<td class="res" colspan="6"><p id="result"></p></td>
+			</tr>
+			<tr>
+				<td>
+					<button onclick="seven()">7</button>
+				</td>
+				<td>
+					<button = onclick="eight()">8</button>
+				</td>
+				<td>
+					<button = onclick="nine()">9</button>
+				</td>
+				<td class="small">
+					<button = onclick="Power()" id="tan"><div>x<span class='nup'>n</span></div> <div id=uppertan>tan</div> </button>
+				</td>
+				<td class="small">
+					<button = onclick="Sqrt()" id="e^x"> <div> √ <span class="sqrt"> x </span> </div> <div id=uppersq>e<span class="powup">x</span></div> </button>
+				</td>
+				<td class="small">
+					<button = onclick="CA()">CA</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button = onclick="four()">4</button>
+				</td>
+
+				<td>
+					<button = onclick="five()">5</button>
+				</td>
+
+				<td>
+					<button = onclick="six()">6</button>
+				</td>
+
+				<td class="small">
+					<button = onclick="Multiply()" id="cos">*<div id=upper>cos</div></button>
+				</td>
+
+				<td class="small">
+					<button = onclick="Divide()" id="sin" >/<div id=upper>sin</div></button>
+				</td>
+
+				<td class="small">
+					<button = onclick="C()">C</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button = onclick="one()">1</button>
+				</td>
+
+				<td>
+					<button = onclick="two()">2</button>
+				</td>
+
+				<td>
+					<button = onclick="three()">3</button>
+				</td>
+
+				<td class="small">
+					<button = onclick="add()">+</button>
+				</td>
+
+				<td class="small">
+					<button = onclick="substract()">-</button>
+				</td>
+
+				<td class="small">
+					<button = onclick="ans()">ans.</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button onclick="zero()">0</button>
+				</td>
+				<td>
+					<button = onclick="point()">.</button>
+				</td>
+				<td colspan="3" class="small eq">
+					<button onclick="equal()">=</button>
+				</td>
+			</tr>
+		</table>
+		<div onclick="change()" class="img">
+			<h1>CHANGE !!!</h1>
+		</div></div>
+	</body>
+</html>
