@@ -1,13 +1,8 @@
-    * {
-     font-family: Arial;
-    }
-
-    body{
+    /*body{
         background-color: hsl(1, 0%, 5%);
         color:white;
-    }
-
-    .img {
+    }*/
+    .calculatrice .img {
         background-image: url("https://vignette.wikia.nocookie.net/dragonball/images/e/ef/CaptainGinyuBodyChangeEp71.png/revision/latest?c=20180416193553");
         width: 250px;
         height: 141px;
@@ -20,17 +15,17 @@
         cursor: pointer;
     }
 
-    .img:active {
+    .calculatrice .img:active {
        box-shadow: 0px 5px 3px hsla(0, 0%, 30%, 1);
        transform: translateY(4px);
 
     }
 
-    .flex-img{
+    .calculatrice .flex-img{
         display: flex;
     }
 
-    h1 {
+    .calculatrice h1 {
         font-size: 23px;
         z-index: 1;
         margin: 50px 50px;
@@ -42,46 +37,45 @@
         text-shadow: 1px 2px 4px hsla(270, 100%, 53%, 58%);
     }
 
-    table{
+    .calculatrice table{
         border: solid 3px black;
-        margin-left: 25px;
     }
     
-    table, td {
+    .calculatrice table, td {
         width: 450px;
         height: 90px;
         border-collapse:collapse;
     }
 
-    tr{
+    .calculatrice tr{
         background-color: darkblue;
     }
 
-    td{
+    .calculatrice td{
         width: 12%;
     }
 
-    .small{
+    .calculatrice .small{
         width: 8%;
         background-color: hsl(1, 0%, 11%);
     }
 
-    button {
+    .calculatrice button {
         width: 100%;
         height: 100%;
-        font-size: 17px;
+        font-size: 16px;
         color: white;
-        background-color: darkblue;
         border: none;
+        background-color: inherit;
     }
 
-    div{
+    .calculatrice div{
         font-size: 25px;
         font-family: "Petit Formal Script";
         font-weight: 400;         
     }
 
-    span, .powup{
+    .calculatrice span, .calculatrice .powup{
         font-size: 14px;
         position: relative;
         bottom:0.75rem;
@@ -89,32 +83,32 @@
         font-family: "Petit Formal Script";
         font-weight: inherit;
     }
-    .powup, .sqrtup{
+    .calculatrice .powup, .calculatrice .sqrtup{
         position: relative;
         bottom: 0.45rem;
         font-size: 9px;
         left: 4px;
     }
-    .re {
+    .calculatrice .re {
         position: relative;
         right: 0.5em;
         font-size: 19px;
     }
 
-     .small div {
+    .calculatrice .small div {
         font-size: 22px ;
     }
 
-    .sqrt{
+    .calculatrice .sqrt{
         bottom: 0.2rem;
         font-size: 20px;
         right: 3px;
     }
-    .sqrtup{
+    .calculatrice .sqrtup{
         top:0;
         left: 2px;
     }
-    .res {
+    .calculatrice .res {
         font-size: 30px;
         background-color: white;
         border: 3px solid black;
@@ -122,29 +116,25 @@
         color:black;
     }
 
-    button{
-        background-color: inherit;
-    }
-
-    .eq{
+    .calculatrice .calculatrice .eq{
         border: 1px solid black;
     }
 
-    #upper, #uppersq, #uppertan{
+    .calculatrice #upper, .calculatrice #uppersq, .calculatrice #uppertan{
         font-size: 11px;
         position: relative;
         bottom: 35px;
         left: 25px;
     }  
-    #uppersq{
+    .calculatrice #uppersq{
         bottom: 42px;
         left: 27px;
     }
-    #uppertan{
+   .calculatrice #uppertan{
         bottom:43px;
         left: 31px;
     }
-    .nup{
+    .calculatrice .nup{
         left: 4px;
         bottom: 11px;
     }
