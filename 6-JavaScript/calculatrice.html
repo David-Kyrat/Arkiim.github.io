@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
     	<title>Calculatrice JV</title>
-    	<link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script|Tangerine:400,700" rel="stylesheet">
-    	<link rel="stylesheet" type="text/css" href="./calculette.css">
+    	<link rel="stylesheet" type="text/css" href="../TM-CSS.css">
+ 		<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300|Work+Sans:400,500,600,700,800,900c|Raleway:300,400,700|Lato:400,700,900|Petit+Formal+Script|Tangerine:400,700" rel="stylesheet">
 	    <script type="text/javascript">
 	    	var res = "";
 		    var n = 0;
@@ -314,95 +314,131 @@
 		    }
 		</script>
 	</head>
-	<body><div class="flex-img">
-		<table>
-			<tr>
-				<td class="res" colspan="6"><p id="result"></p></td>
-			</tr>
-			<tr>
-				<td>
-					<button onclick="seven()">7</button>
-				</td>
-				<td>
-					<button = onclick="eight()">8</button>
-				</td>
-				<td>
-					<button = onclick="nine()">9</button>
-				</td>
-				<td class="small">
-					<button = onclick="Power()" id="tan"><div>x<span class='nup'>n</span></div> <div id=uppertan>tan</div> </button>
-				</td>
-				<td class="small">
-					<button = onclick="Sqrt()" id="e^x"> <div> √ <span class="sqrt"> x </span> </div> <div id=uppersq>e<span class="powup">x</span></div> </button>
-				</td>
-				<td class="small">
-					<button = onclick="CA()">CA</button>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<button = onclick="four()">4</button>
-				</td>
+	<body>
+<!-- Web Page header syntax & everything -->
+		
+		<div class="headers">
+			<div class="header1"><h1>Sites Web : Du Passé au Futur en Passant par la Création</h1></div>
+    		<div class="header2 right"><h2>L'Exemple de la Création de Mon Site</h2></div>
+  		</div><br><br><br>
+  		<ul class="nav flexC">
+	  		<li class="col"><a class="button"href="../0-Home/index.html">Home</a></li>
+		    <li class="col"><a class="button"href="../1-Histoire/Histoire.html">Histoire</a></li>
+		    <li class="col"><a class="button"href="../2-HTML/HTML.html">HTML</a></li>
+		    <li class="col"><a class="button"href="../3-CSS/CSS.html">CSS</a></li>
+		   	<li class="col" id="active"><a class="button acitve"href="./JavaScript.html">JavaScript</a></li>    
+		    <li class="col"><a class="button"href="../4-Conclusion/Conclusion.html">Conclusion</a></li>
+		</ul>
+		<div class="titleC">
+			<h1 class="title2C"> Partie 4 : JavaScript</h1>
+		</div>
+		<div class="container"><br><br>
+			<div class="centerH content2i pad">
 
-				<td>
-					<button = onclick="five()">5</button>
-				</td>
+<!-- Beginning Calculator !!! -->
+		
+				<div class="calculatrice"><div class="flex-img">
+				<table>
+					<tr>
+						<td class="res" colspan="6"><p id="result"></p></td>
+					</tr>
+					<tr>
+						<td>
+							<button onclick="seven()">7</button>
+						</td>
+						<td>
+							<button = onclick="eight()">8</button>
+						</td>
+						<td>
+							<button = onclick="nine()">9</button>
+						</td>
+						<td class="small">
+							<button = onclick="Power()" id="tan"><div>x<span class='nup'>n</span></div> <div id=uppertan>tan</div> </button>
+						</td>
+						<td class="small">
+							<button = onclick="Sqrt()" id="e^x"> <div> √ <span class="sqrt"> x </span> </div> <div id=uppersq>e<span class="powup">x</span></div> </button>
+						</td>
+						<td class="small">
+							<button = onclick="CA()">CA</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button = onclick="four()">4</button>
+						</td>
 
-				<td>
-					<button = onclick="six()">6</button>
-				</td>
+						<td>
+							<button = onclick="five()">5</button>
+						</td>
 
-				<td class="small">
-					<button = onclick="Multiply()" id="cos">*<div id=upper>cos</div></button>
-				</td>
+						<td>
+							<button = onclick="six()">6</button>
+						</td>
 
-				<td class="small">
-					<button = onclick="Divide()" id="sin" >/<div id=upper>sin</div></button>
-				</td>
+						<td class="small">
+							<button = onclick="Multiply()" id="cos">*<div id=upper>cos</div></button>
+						</td>
 
-				<td class="small">
-					<button = onclick="C()">C</button>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<button = onclick="one()">1</button>
-				</td>
+						<td class="small">
+							<button = onclick="Divide()" id="sin" >/<div id=upper>sin</div></button>
+						</td>
 
-				<td>
-					<button = onclick="two()">2</button>
-				</td>
+						<td class="small">
+							<button = onclick="C()">C</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button = onclick="one()">1</button>
+						</td>
 
-				<td>
-					<button = onclick="three()">3</button>
-				</td>
+						<td>
+							<button = onclick="two()">2</button>
+						</td>
 
-				<td class="small">
-					<button = onclick="add()">+</button>
-				</td>
+						<td>
+							<button = onclick="three()">3</button>
+						</td>
 
-				<td class="small">
-					<button = onclick="substract()">-</button>
-				</td>
+						<td class="small">
+							<button = onclick="add()">+</button>
+						</td>
 
-				<td class="small">
-					<button = onclick="ans()">ans.</button>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2">
-					<button onclick="zero()">0</button>
-				</td>
-				<td>
-					<button = onclick="point()">.</button>
-				</td>
-				<td colspan="3" class="small eq">
-					<button onclick="equal()">=</button>
-				</td>
-			</tr>
-		</table>
-		<div onclick="change()" class="img">
-			<h1>CHANGE !!!</h1>
-		</div></div>
-	</body>
+						<td class="small">
+							<button = onclick="substract()">-</button>
+						</td>
+
+						<td class="small">
+							<button = onclick="ans()">ans.</button>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<button onclick="zero()">0</button>
+						</td>
+						<td>
+							<button = onclick="point()">.</button>
+						</td>
+						<td colspan="3" onclick="equal()" class="small eq">
+							<button>=</button>
+						</td>
+					</tr>
+				</table>
+				<div onclick="change()" class="img">
+					<h1>CHANGE !!!</h1>
+				</div>	
+				</div></div>
+			</div>
+<!-- footer website and everything -->
+		
+				<h5>
+					<a id="ABV" href="../5-Annexes/ABV.html">Liste des abréviations</a>
+				</h5>
+				<h5>
+					<a id="Bibliographie" href="../5-Annexes/Bibliographie.html">Autres sources</a>
+				</h5>
+			
+		</div>
+<!--END-->
+	</body>	
 </html>
