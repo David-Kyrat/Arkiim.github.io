@@ -432,6 +432,48 @@ hr {
 #END {
 	height: 400px;
 }
+
+/* Tooltip web 30 years */
+.HB0{
+	position: relative;
+	display: inline-block;
+}
+.HB0:hover .HB{
+	visibility: visible;
+	opacity: 1;
+}
+.HB{
+	visibility: hidden;
+	position: absolute;
+	width: 130px;
+	border: 1px solid rebeccapurple;
+	background-color: white;
+	color: teal;
+	text-align: center;
+	border-radius: 6px;
+	opacity: 0;
+	transition: opacity .5s;
+	font-weight: bold;
+}
+.HB1{
+	bottom: 125%;
+	left: 10%;
+}
+.HB0 button{
+	display: inline;
+}
+.nospace {
+	margin: 0;
+	padding: 0 20px;
+}
+.nsp1{
+	margin-bottom: 0; 
+}
+.nsp2{
+	margin-top: 0;
+}
+/* End Tooltip */
+
 /* Beginning Calculator */
 
     .calculatrice .img {
