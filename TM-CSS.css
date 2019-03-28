@@ -534,7 +534,7 @@ hr {
         border: solid 3px black;
         margin: 20px auto;
         font-family: "Arial";
-        margin-right: 100px ; 	
+        margin-right: 100px ;
     }    
     .calculatrice table, td {
         width: 450px;
@@ -600,11 +600,14 @@ hr {
     	font-size: 15px;
     }
     .calculatrice .res {
-        font-size: 30px;
         background-color: white;
         border: 3px solid black;
         height: 6.7rem;
         color:black;
+    }
+    .calculatrice p{
+    	 font-size: 1.5rem;
+    	 text-align: center;
     }
     .calculatrice .eq{
         border: 1px solid black;
