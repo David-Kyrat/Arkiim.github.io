@@ -10,7 +10,7 @@ body.idx{
 	background-image: url(./IMGs/Background.png);
 	background-origin: padding-box;
 	background-size: cover; 
-	background-attachment:tit fixed;
+	background-attachment: fixed;
 	background-position: center center;
 }
 * {
@@ -173,8 +173,8 @@ ul li {
 	font-weight: lighter;
 }
 
-.titleHi, .titleH, .titleC, .titleConc {
-	background-image: url(https://memoire-histoire.fr/wp-content/uploads/2017/06/les-fondamentaux-histoire-3-710x400.jpg);
+.titleHi, .titleH, .titleC, .titleJ, .titleConc {
+	background-image: url("./IMGs/histoire-banner.jpg");
 	background-size: cover;
 	width: 100%;
 	height:270px;
@@ -188,12 +188,15 @@ ul li {
 .titleC {
 	background-image: url(./IMGs/css-banner.png);
 }
+.titleJ {
+	background-image: url(./IMGs/JV-banner.png);
+}
 .titleConc{
 	background-image: url(./IMGs/conclusion.png);
 }
-.title2, .title2H, .title2C, .title2Conc {
+.title2, .title2hi, .title2H, .title2C, .title2J, .title2Conc {
 	margin: 50px 60px;
-	width: 40%;
+	width: 42%;
 	display: inline-block;
 	border-bottom: groove 4px hsl(0, 85%, 35%);
 	border-top: groove 4px hsl(0, 85%, 35%); 
@@ -202,12 +205,22 @@ ul li {
 	font-weight: 600;
 	color: hsl(0, 100%, 35%);
 }
-.title2H, .title2C {
+
+.title2hi{
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	top: 80px;
+}
+.title2H, .title2C, .title2J{
 	float: right;
 	padding: 10px 0 10px 7.5%;
 }
 .title2C {
 	margin-right: 170px;
+}
+.title2J{
+	padding-left: 4%;
 }
 .title2Conc {
 	text-align: center;
@@ -477,17 +490,25 @@ hr {
 /* Beginning Calculator */
 
     .calculatrice .img {
-        background-image: url("https://vignette.wikia.nocookie.net/dragonball/images/e/ef/CaptainGinyuBodyChangeEp71.png/revision/latest?c=20180416193553");
         width: 250px;
         height: 141px;
         background-size: contain;
         background-repeat: no-repeat;
         display: inline-block;
-        margin: 10% 13px;
+        margin: 12%;
         box-shadow: 0px 11px 3px hsla(0, 10%, 70%, 0.6);
         border: 0.5px solid hsla(0, 10%, 70%, 0.6);
         cursor: pointer;
+        margin-left: 0;
     }
+    .lin-grad {
+      	background-image: linear-gradient(to left, red, blue);
+      	border: solid; /*Border qui marche pas*/
+      	border-image: linear-gradient(to left, crimson, teal);
+       	border-image-slice: 1;
+        border-width: 2px;
+        }
+
     .calculatrice .img:active {
        box-shadow: 0px 5px 3px hsla(0, 0%, 30%, 1);
        transform: translateY(4px);
@@ -499,20 +520,21 @@ hr {
         display: flex;
     }
     .calculatrice h1 {
-        font-size: 23px;
+        font-size: 33px;
         z-index: 1;
-        margin: 50px 50px;
-        border: 1px solid hsla(270, 100%, 53%, 62%);
+        margin: 17% 30%;
+        /*border: 1px solid hsla(270, 100%, 53%, 62%);*/
         display: inline-block;
         padding: 5px;
-        background-color: hsla(0,0%,100%,50%);
-        color: hsla(270, 100%, 53%, 53%);
+		/* background-color: ancienne couleur hsla(0,0%,100%,50%);*/
+        color: white ; /* hsla(270, 100%, 53%, 53%)*/
         text-shadow: 1px 2px 4px hsla(270, 100%, 53%, 58%);
     }
     .calculatrice table{
         border: solid 3px black;
         margin: 20px auto;
         font-family: "Arial";
+        margin-right: 100px ; 	
     }    
     .calculatrice table, td {
         width: 450px;
